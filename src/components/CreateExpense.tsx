@@ -1,12 +1,8 @@
 import { useState, ChangeEvent } from "react";
-
-interface FormData {
-    name: string;
-    cost: string;
-}
+import { FormDataType } from "@/types";
 
 const CreateExpense: React.FC = () => {
-    const [formData, setFormData] = useState<FormData>({
+    const [formData, setFormData] = useState<FormDataType>({
         name: "",
         cost: "",
     });

@@ -1,6 +1,5 @@
-type Expense = {
+export type ExpenseType = {
     id: number;
     name: string;
     cost: number;
 }
-export default Expense;

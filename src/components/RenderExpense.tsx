@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import Expense from "@/types/ExpenseType";
+import { ExpenseType } from "@/types";
 import { AdminContext } from "@/components/HomePage";
 
 type ExpenseComponentProps = {
-    data: Expense[];
+    data: ExpenseType[];
     removeOne: (id: number) => void;
 };
 
